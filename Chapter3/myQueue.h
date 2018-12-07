@@ -7,18 +7,13 @@ struct queueNode
 };
 
 class myQueue{
-
-
 	queueNode* first;
 	queueNode* last;
-
 public:
-
 	void push(int val);
 	int pop();
 	bool isEmpty();
 };
-
 
 void myQueue::push(int val){
 	queueNode* a = new queueNode(val);
@@ -29,7 +24,6 @@ void myQueue::push(int val){
 		first = a;
 		last = a;
 	}
-
 }
 
 int myQueue::pop(){
@@ -44,7 +38,6 @@ int myQueue::pop(){
 bool myQueue::isEmpty(){
 	return first==nullptr;
 }
-
 
 int main(){
 	myQueue q;
